@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slidecraft-ai"
+version = "0.1.0"
+description = "Multi-Agent PPT Generation Framework powered by Multimodal AI"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "SlideCraft Team"},
+]
+
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-anthropic>=0.3.0",
+    "langchain-google-genai>=2.0.0",
+    "langgraph>=0.2.0",
+    "python-pptx>=1.0.0",
+    "Pillow>=10.0.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+    "PyMuPDF>=1.24.0",
+    "python-docx>=1.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.5.0",
+]
+
+[project.scripts]
+slidecraft = "slidecraft.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["slidecraft*"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100

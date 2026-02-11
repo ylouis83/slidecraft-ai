@@ -1,0 +1,1 @@
+"""SlideCraft Templates Package."""

@@ -2,7 +2,7 @@
 
 > **基于多模态大模型的多 Agent PPT 自动生成框架**
 
-SlideCraft-AI 是一个受 Manus 等多 Agent 系统启发设计的 PPT 自动生成框架。它利用最新的多模态模型能力（GPT-4o / Claude 3.5 / Gemini 2.0），通过多个专业化 Agent 协作，从自然语言描述或参考素材自动生成高质量 PowerPoint 演示文稿。
+SlideCraft-AI 是一个使用世界最先进的模型协同工作的多 Agent PPT 自动生成框架。它通过多个专业化 Agent 协作，从自然语言描述或参考素材自动生成高质量 PowerPoint 演示文稿。
 
 ---
 
